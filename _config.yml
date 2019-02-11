@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "fr-FR"
 title                    : "Simon Rouchier"
 title_separator          : "-"
 name                     : &name "Simon Rouchier"
-description              : &description "Assistant Professor at Université Savoie Mont-Blanc"
+description              : &description "Data driven building energy performance"
 url                      : https://srouchier.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "srouchier.github.io"
@@ -32,7 +32,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Simon Rouchier"
   avatar           : "profile.png"
-  bio              : "Assistant Professor at Université Savoie Mont-Blanc. Using data science for building energy performance."
+  bio              : "Assistant Professor at Université Savoie Mont-Blanc"
   location         : "Chambéry, France"
   employer         :
   googlescholar    : "https://scholar.google.fr/citations?user=qa8nWbQAAAAJ&hl=fr&oi=ao"
