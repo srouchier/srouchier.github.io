@@ -8,19 +8,15 @@ redirect_from:
 
 This page is a list of a few software resources I either developed, or contributed to developing: Jupyter notebooks, Python libraries, and other tutorials.
 
-# InverseBuilding: solving inverse problems in building physics
+## pySIP: stochastic state-space inference and prediction in Python
 
-[InverseBuilding](https://srouchier.github.io/InverseBuilding/) is a series of courses showing how to solve various types of inverse problems, or model calibration problems, in building physics applications. Examples of tutorials include:
+Ordinary differential equations, determined from first-principles, can be used for modeling physical systems. However, the exact dynamics of such systems are uncertain and only measured at discrete-time instants through non-ideal sensors. In this case, stochastic differential equations provide a modeling framework which is more robust to these uncertainties. The stochastic part of the state-space model can accomodate for unmodeled disturbances, which do not have a significant influence on the system dynamics. Otherwise, unmeasured disturbances can be modeled as temporal Gaussian Processes with certain parametrized covariance structure. The resulting Latent Force Model is a combination of parametric grey-box model and non-parametric Gaussian process model.
 
-* [Estimating the heat conductivity](https://nbviewer.jupyter.org/github/srouchier/InverseBuilding/blob/master/01_HeatConductivity/Notebook_HeatConductivity.ipynb) of a wall with Bayesian inference
+[pySIP](https://github.com/locie/pySIP) provides a framework for infering continuous time linear stochastic state-space models. For that purpose, it is possible to chose between a frequentist and a Bayesian workflow. Each workflow allows to estimate the parameters, assess the inference and model reliability, and perform model selection.
 
-<img src="/images/software-inverse-1.png" style="width: 450px;">
+<img src="https://buildingenergygeeks.org/images/data/ssm03_output.png" style="width: 350px;">
 
-* [Calculating a boundary heat flow](https://nbviewer.jupyter.org/github/srouchier/InverseBuilding/blob/master/02_HeatFlow/Notebook_HeatFlow.ipynb) from temperature measurements by solving the linear and transient inverse heat conduction problem
-
-<img src="/images/software-inverse-2.png" style="width: 350px;">
-
-# hamopy: heat, air and moisture transfer in python
+## hamopy: heat, air and moisture transfer in python
 
 [Hamopy](https://srouchier.github.io/hamopy/) is a python package for the numerical simulation of one-dimensional heat, air and moisture (HAM) transfer in porous materials. Its principle is the finite-element resolution of the HAM conservation equations.
 
